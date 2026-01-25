@@ -28,7 +28,9 @@
   color: red;
   font-weight: 600;
 }
-
+.fa-circle-check {
+  color: #4caf50;
+}
 .line hr {
   border: none;              /* bỏ style mặc định */
   height: 3px;               /* độ dày line */

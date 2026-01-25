@@ -57,77 +57,391 @@
         >
           1
         </button>
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#group2">
+          2
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
-        <div>
-          <div class="tab-pane fade show active" id="group1">
-            <div>
-              <div class="lang-switch">
-                <span class="fi fi-vn" onclick="toggleVi()"></span>
-                <i
-                  class="fa-solid fa-lightbulb"
-                  onclick="toggleAnswer()"
-                  title="Show answer"
-                ></i>
-              </div>
-              <div class="question">
-                <h4 class="en">
-                  1. Which of the following statements is a valid objective for
-                  testing?
-                </h4>
-                <h4 class="vi hidden">
-                  1. Câu nào sau đây là mục tiêu hợp lệ của việc kiểm thử?
-                </h4>
-              </div>
-              <div class="options">
-                <div>
-                  <p class="en">
-                    <b>A.</b> To determine whether enough component tests were
-                    executed within system testing
-                  </p>
+        <!-- Group questions 1 -->
+        <div class="tab-pane fade show active" id="group1">
+          <!-- Question 1 -->
+          <div class="question-group">
+            <div class="lang-switch">
+              <span class="fi fi-vn" onclick="toggleVi(this)"></span>
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="toggleAnswer(this)"
+                title="Show answer"
+              ></i>
+            </div>
+            <div class="question">
+              <h4 class="en">
+                1. Which of the following statements is a valid objective for
+                testing?
+              </h4>
+              <h4 class="vi hidden">
+                1. Câu nào sau đây là mục tiêu hợp lệ của việc kiểm thử?
+              </h4>
+            </div>
+            <div class="options">
+              <div>
+                <p class="en">
+                  <b>A.</b> To determine whether enough component tests were
+                  executed within system testing
+                </p>
 
-                  <p class="vi hidden">
-                    <b>A.</b> Xác định xem đã thực hiện đủ số lượng kiểm thử
-                    thành phần trong giai đoạn kiểm thử hệ thống hay chưa
-                  </p>
-                </div>
-                <div>
-                  <p class="en answer">
-                    <b>B.</b> To find as many failures as possible so that
-                    defects can be identified and corrected
-                  </p>
-
-                  <p class="vi hidden">
-                    <b>B.</b> Tìm ra càng nhiều lỗi càng tốt để có thể xác định
-                    và khắc phục các khiếm khuyết.
-                  </p>
-                </div>
-                <div>
-                  <p class="en">
-                    <b>C.</b> To prove that all possible defects are identified
-                  </p>
-
-                  <p class="vi hidden">
-                    <b>C.</b> Để chứng minh rằng tất cả các khiếm khuyết có thể
-                    có đã được phát hiện
-                  </p>
-                </div>
-                <div>
-                  <p class="en">
-                    <b>D.</b> To prove that any remaining defects will not cause
-                    any failures
-                  </p>
-
-                  <p class="vi hidden">
-                    <b>D.</b> Để chứng minh rằng các khiếm khuyết còn sót lại sẽ
-                    không gây ra bất kỳ lỗi (failure) nào
-                  </p>
-                </div>
+                <p class="vi hidden">
+                  <b>A.</b> Xác định xem đã thực hiện đủ số lượng kiểm thử thành
+                  phần trong giai đoạn kiểm thử hệ thống hay chưa
+                </p>
               </div>
-              <div class="vocabulary"></div>
-              <div class="line">
-                <hr />
+              <div>
+                <p class="en answer">
+                  <b>B.</b> To find as many failures as possible so that defects
+                  can be identified and corrected
+                </p>
+
+                <p class="vi hidden">
+                  <b>B.</b> Tìm ra càng nhiều lỗi càng tốt để có thể xác định và
+                  khắc phục các khiếm khuyết.
+                </p>
               </div>
+              <div>
+                <p class="en">
+                  <b>C.</b> To prove that all possible defects are identified
+                </p>
+
+                <p class="vi hidden">
+                  <b>C.</b> Để chứng minh rằng tất cả các khiếm khuyết có thể có
+                  đã được phát hiện
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>D.</b> To prove that any remaining defects will not cause
+                  any failures
+                </p>
+
+                <p class="vi hidden">
+                  <b>D.</b> Để chứng minh rằng các khiếm khuyết còn sót lại sẽ
+                  không gây ra bất kỳ lỗi (failure) nào
+                </p>
+              </div>
+            </div>
+            <div class="vocabulary"></div>
+            <div class="line">
+              <hr />
+            </div>
+          </div>
+          <!-- Question 2 -->
+          <div class="question-group">
+            <div class="lang-switch">
+              <span class="fi fi-vn" onclick="toggleVi(this)"></span>
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="toggleAnswer(this)"
+                title="Show answer"
+              ></i>
+            </div>
+            <div class="question">
+              <h4 class="en">
+                2.Which of the following statements correctly describes the
+                difference between testing and debugging?
+              </h4>
+              <h4 class="vi hidden">
+                2.Phát biểu nào dưới đây mô tả đúng sự khác nhau giữa testing
+                (kiểm thử) và debugging (gỡ lỗi)?
+              </h4>
+            </div>
+            <div class="options">
+              <div>
+                <p class="en">
+                  <b>A.</b> Testing identifies the source of defects; debugging
+                  analyzes the defects and processes prevention activities
+                </p>
+
+                <p class="vi hidden">
+                  <b>A.</b> Kiểm thử xác định nguồn gốc của khiếm khuyết; gỡ lỗi
+                  phân tích các khiếm khuyết và thực hiện các hoạt động phòng
+                  ngừa
+                </p>
+              </div>
+              <div>
+                <p class="en answer">
+                  <b>B.</b> Testing shows failures caused by defects; debugging
+                  finds, analyzes, and removes the causes of failures in the
+                  softwarev
+                </p>
+
+                <p class="vi hidden">
+                  <b>B.</b> Kiểm thử chỉ ra các lỗi (failures) do khiếm khuyết
+                  (defects) gây ra; gỡ lỗi tìm kiếm, phân tích và loại bỏ nguyên
+                  nhân gây ra các lỗi trong phần mềm
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>C.</b> Testing removes faults; debugging identifies the
+                  causes of failures
+                </p>
+
+                <p class="vi hidden">
+                  <b>C.</b> Kiểm thử loại bỏ các lỗi (faults); gỡ lỗi xác định
+                  nguyên nhân gây ra lỗi (failures)
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>D.</b> Testing prevents the causes of failures; debugging
+                  removes the failures
+                </p>
+
+                <p class="vi hidden">
+                  <b>D.</b> Kiểm thử ngăn chặn nguyên nhân gây ra lỗi; gỡ lỗi
+                  loại bỏ các lỗi (failures)
+                </p>
+              </div>
+            </div>
+            <div class="vocabulary"></div>
+            <div class="line">
+              <hr />
+            </div>
+          </div>
+          <!-- Question 3-->
+          <div class="question-group">
+            <div class="lang-switch">
+              <span class="fi fi-vn" onclick="toggleVi(this)"></span>
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="toggleAnswer(this)"
+                title="Show answer"
+              ></i>
+            </div>
+            <div class="question">
+              <h4 class="en">
+                3.Which one of the statements below describes a failure
+                discovered during testing or in production?
+              </h4>
+              <h4 class="vi hidden">
+                3.Phát biểu nào dưới đây mô tả một failure (lỗi biểu hiện) được
+                phát hiện trong quá trình kiểm thử hoặc khi hệ thống đang vận
+                hành (production)?
+              </h4>
+            </div>
+            <div class="options">
+              <div>
+                <p class="en answer">
+                  <b>A.</b> The product crashed when the user selected an option
+                  in a dialog box
+                </p>
+
+                <p class="vi hidden">
+                  <b>A.</b> Sản phẩm bị sập (crash) khi người dùng chọn một tùy
+                  chọn trong hộp thoại
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>B.</b> The wrong version of one source code file was
+                  inlcuded in the build
+                </p>
+
+                <p class="vi hidden">
+                  <b>B.</b> Phiên bản sai của một file mã nguồn đã được đưa vào
+                  bản build
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>C.</b> The computaion algorithm used the wrong input
+                  variables
+                </p>
+
+                <p class="vi hidden">
+                  <b>C.</b> Thuật toán tính toán đã sử dụng sai các biến đầu vào
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>D.</b> The developer misinterpreted the requirement for the
+                  algorithm
+                </p>
+
+                <p class="vi hidden">
+                  <b>D.</b> Lập trình viên đã hiểu sai yêu cầu đối với thuật
+                  toán
+                </p>
+              </div>
+            </div>
+            <div class="vocabulary"></div>
+            <div class="line">
+              <hr />
+            </div>
+          </div>
+          <!-- Question 4-->
+          <div class="question-group">
+            <div class="lang-switch">
+              <span class="fi fi-vn" onclick="toggleVi(this)"></span>
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="toggleAnswer(this)"
+                title="Show answer"
+              ></i>
+            </div>
+            <div class="question">
+              <h4 class="en">
+                4. A new retail product was released to production by your
+                company. Shortly after the release it was apparent that there
+                were numerous problems with the point of sale application. This
+                resulted in a number of customer complaints and negative
+                postings on social media encouraging people to take their
+                business to your competitor. You have investigated the problems
+                and have discovered that the production point of sale equipment
+                is a later model than the model used in testing. The software
+                functions correctly on the old version, but fails on the later
+                model. Given this scenario, what is the root cause and what is
+                the effect?
+              </h4>
+              <h4 class="vi hidden">
+                4. Công ty bạn đã phát hành một sản phẩm bán lẻ mới lên môi
+                trường production. Không lâu sau khi phát hành, người ta nhận
+                thấy có rất nhiều vấn đề xảy ra với ứng dụng điểm bán hàng (POS
+                – point of sale). Điều này dẫn đến nhiều khiếu nại từ khách hàng
+                và các bài đăng tiêu cực trên mạng xã hội, khuyến khích mọi
+                người chuyển sang sử dụng dịch vụ của đối thủ cạnh tranh. Bạn đã
+                điều tra các vấn đề này và phát hiện rằng thiết bị POS trên môi
+                trường production là một model mới hơn so với model đã được sử
+                dụng trong quá trình testing. Phần mềm hoạt động đúng trên phiên
+                bản thiết bị cũ, nhưng lại bị lỗi trên model mới hơn. Với kịch
+                bản này, nguyên nhân gốc (root cause) là gì và hậu quả (effect)
+                là gì?
+              </h4>
+            </div>
+            <div class="options">
+              <div>
+                <p class="en">
+                  <b>A.</b> The root cause is the old equipment and the effect
+                  is the new equipment
+                </p>
+
+                <p class="vi hidden">
+                  <b>A.</b> Nguyên nhân gốc là thiết bị cũ và hậu quả là thiết
+                  bị mới
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>B.</b> The root cause is the customer complaints and the
+                  effect is the social media postings
+                </p>
+
+                <p class="vi hidden">
+                  <b>B.</b> Nguyên nhân gốc là các khiếu nại của khách hàng và
+                  hậu quả là các bài đăng trên mạng xã hội
+                </p>
+              </div>
+              <div>
+                <p class="en answer">
+                  <b>C.</b> The root cause is conducting the testing on the
+                  wrong version of the equipment and the effect is the customer
+                  complaints and postings
+                </p>
+
+                <p class="vi hidden">
+                  <b>C.</b> Nguyên nhân gốc là việc thực hiện testing trên sai
+                  phiên bản thiết bị, và hậu quả là các khiếu nại của khách hàng
+                  cùng các bài đăng tiêu cực
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>D.</b> The root cause is the software failing on the later
+                  model and the effect is the customer complaints
+                </p>
+
+                <p class="vi hidden">
+                  <b>D.</b> Nguyên nhân gốc là phần mềm bị lỗi trên model mới
+                  hơn và hậu quả là các khiếu nại của khách hàng
+                </p>
+              </div>
+            </div>
+            <div class="vocabulary"></div>
+            <div class="line">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <!-- Group questions 2 -->
+        <div class="tab-pane fade" id="group2">
+          <!-- Question 5-->
+          <div class="question-group">
+            <div class="lang-switch">
+              <span class="fi fi-vn" onclick="toggleVi(this)"></span>
+              <i
+                class="fa-solid fa-lightbulb"
+                onclick="toggleAnswer(this)"
+                title="Show answer"
+              ></i>
+            </div>
+            <div class="question">
+              <h4 class="en">
+                5. Which of the following statements CORRECTLY describes one of
+                the seven key principles of sofware testing?
+              </h4>
+              <h4 class="vi hidden">
+                5. Phát biểu nào dưới đây mô tả đúng một trong bảy nguyên lý cốt
+                lõi của kiểm thử phần mềm?
+              </h4>
+            </div>
+            <div class="options">
+              <div>
+                <p class="en">
+                  <b>A.</b> By using automated testing it is possible test
+                  everything
+                </p>
+
+                <p class="vi hidden">
+                  <b>A.</b> Bằng cách sử dụng kiểm thử tự động, có thể kiểm thử
+                  mọi thứ
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>B.</b> With sufficient effort and tool support, exhaustive
+                  testing is feasible for all software
+                </p>
+
+                <p class="vi hidden">
+                  <b>B.</b> Với đủ nỗ lực và công cụ hỗ trợ, việc kiểm thử toàn
+                  diện (exhaustive testing) là khả thi đối với mọi phần mềm
+                </p>
+              </div>
+              <div>
+                <p class="en answer">
+                  <b>C.</b> It is impossible to test all input and precondition
+                  combinations in a system
+                </p>
+
+                <p class="vi hidden">
+                  <b>C.</b> Không thể kiểm thử tất cả các tổ hợp đầu vào và điều
+                  kiện tiên quyết trong một hệ thống
+                </p>
+              </div>
+              <div>
+                <p class="en">
+                  <b>D.</b> The purpose of testing is to prove the absence of
+                  defects
+                </p>
+
+                <p class="vi hidden">
+                  <b>D.</b> Mục đích của kiểm thử là chứng minh sự không tồn tại
+                  của các khiếm khuyết
+                </p>
+              </div>
+            </div>
+            <div class="vocabulary"></div>
+            <div class="line">
+              <hr />
             </div>
           </div>
         </div>
