@@ -1,0 +1,38 @@
+.hidden {
+  display: none;
+}
+
+.vi {
+  color: blue; /* giống hình bạn gửi */
+  margin-top: 8px;
+}
+
+.options {
+  padding-left: 20px;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-switch .fi,
+.lang-switch i {
+  font-size: 28px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.answer.show {
+  color: red;
+  font-weight: 600;
+}
+
+.line hr {
+  border: none;              /* bỏ style mặc định */
+  height: 3px;               /* độ dày line */
+  background-color: #53024f; /* màu line (đỏ) */
+  margin: 12px 0;
+}
+
