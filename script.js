@@ -10,12 +10,15 @@ function toggleVi(el) {
 
 function toggleAnswer(el) {
   const group = el.closest('.question-group');
-  const answer = group.querySelector('.answer');
+  const answers = group.querySelectorAll('.answer');
 
-  answer.classList.toggle('show');
+  answers.forEach(answer => {
+    answer.classList.toggle('show');
+  });
 
   el.classList.toggle('fa-circle-check');
   el.classList.toggle('fa-lightbulb');
 }
+
 
 
